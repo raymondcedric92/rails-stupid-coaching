@@ -1,0 +1,11 @@
+<h1>Coach Answer</h1>
+
+<% if @question.present? %>
+  <p><strong>You asked:</strong> <%= @question %></p>
+<% else %>
+  <p><strong>You didn't ask anything!</strong></p>
+<% end %>
+
+<p><strong>Coach says:</strong> <%= @answer %></p>
+
+<a href="ask">Ask another question</a>
